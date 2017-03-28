@@ -1,4 +1,4 @@
-= Java 9 - O que de novo é realmente bom, e o que não é
+= Java 9 - O que é realmente bom, e o que não é
 Cesar A. Nogueira <contato@cesarnogueira.me>
 
 == Introdução
