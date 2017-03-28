@@ -8,8 +8,8 @@ import static java.lang.System.out;
 public class HttpClientExample {
 
     /**
-     * The HTTP API functions asynchronously &amp; synchronously. In asynchronous mode,
-     * work is done on the threads supplied by the client's ExecutorService.
+     * A API de HTTP com funções assíncronas e síncronas. No modo assíncrono,
+     * o trabalho é feito nas threads suprimidas pelo ExecutorService do cliente.
      */
     public static void main(String[] args) throws Exception {
         HttpClient.getDefault()
@@ -20,6 +20,6 @@ public class HttpClientExample {
                                     out.println(httpResponse.body(HttpResponse.asString()))
                 );
 
-        Thread.sleep(999); // Give worker thread some time.
+        Thread.sleep(999); // Dê à thread worker algum tempo para trabalhar.
     }
 }
