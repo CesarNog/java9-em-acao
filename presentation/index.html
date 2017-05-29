@@ -87,7 +87,7 @@
                 </div>
 
                 <div id="rightsection">
-                    <b>Tip: </b><a  class="c-ref" href="#"><code>filename</code></a> and <a href="#" class="jep">JEP</a> are direct links
+                    <b>Dica: </b><a  class="c-ref" href="#"><code>arquivo</code></a> e <a href="#" class="jep">JEP</a> são links diretos
                 </div>
 
                 <div id="licence">
@@ -96,14 +96,14 @@
                              src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png"/></a>
                     <br/><span xmlns:dct="http://purl.org/dc/terms/"
                                href="http://purl.org/dc/dcmitype/InteractiveResource"
-                               property="dct:title" rel="dct:type">Java 9: An short summary &amp; overview over the new features</span>
-                    by
+                               property="dct:title" rel="dct:type">Apresentação do Java 9 e uma visão geral sobre os novos recursos</span>
+                    por
                     <a xmlns:cc="http://creativecommons.org/ns#" href="https://twitter.com/cesarnogcps"
                        property="cc:attributionName" rel="cc:attributionURL">Cesar A. Nogueira</a>
-                    <br/>is licensed under a
+                    <br/>licenciado por 
                     <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
                         Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</a>.
-                    Based in parts on the work of <a xmlns:dct="http://purl.org/dc/terms/"
+                    Baseado em partes do trabalho da <a xmlns:dct="http://purl.org/dc/terms/"
                                                           href="http://lab.hakim.se/reveal-js/" rel="dct:source">Reveal.JS</a>.
                 </div>
         </section>
@@ -124,22 +124,22 @@
             <!--<section>-->
             <div>
                 <div data-markdown>
-                    ## Datasheet
+                    ## Especificação
                 </div>
                 <div style="width: 85%; margin: 0 auto;">
                     <div data-markdown class="twocol">
-                        ##### Datasheet
+                        ##### Especificação
                         - **82** JEP targeted
                         - GA Release:   <!-- -->
                         ~~2016-09-22~~ **2017-03-23**
                         - Brewing since: 2014-08-11
                     </div>
                     <div data-markdown class="twocol">
-                        ##### Highlights
+                        ##### Destaques
                         - Jigsaw
                         - Tooling
                         - HTTP API
-                        - Language details
+                        - Detalhes da linguagem
                     </div>
                 </div>
             </div>
@@ -157,7 +157,7 @@
             <section>
 
                 <div data-markdown>
-                    # Tooling
+                    # FERRAMENTAS
                 </div>
             </section>
 
@@ -185,7 +185,7 @@
                         ```
                         <!-- .element: class="small" -->
 
-                        Get an overview with `/help` and  `/help shortcuts`
+                        Obtenha uma visão geral com `/help` e  `/help shortcuts`
                     </script>
                 </div>
             </section>
@@ -195,17 +195,17 @@
                 <div data-markdown class="container">
                     <script type="text/template">
                         ### HTML5 Javadoc
-                        - Enable via `-html5` parameter
-                        - Search capability
-                        - HTML5 & updated Doclet API
-                        - Improved DocLint: <span>`-Xdoclint/package:java.*,javax.*`</span> <!-- .element: class="small" -->
+                        - Habilite via parâmetro `-html5` 
+                        - Busca capacitada
+                        - HTML5 e Doclet API atualizada
+                        - DocLint melhorado: <span>`-Xdoclint/package:java.*,javax.*`</span> <!-- .element: class="small" -->
                     </script>
                 </div>
             </section>
 
 
             <section>
-                <h3>HTML5 Javadoc example output</h3>
+                <h3>Exemplo de uma busca no HTML5 Javadoc</h3>
                 <img src="img/javadoc-html5-example.png" alt="Example Java 9 Javadoc output with HTML5 enabled">
             </section>
 
@@ -214,13 +214,13 @@
                 <div data-markdown style="width: 60%; margin: 0 auto">
                     <script type="text/template">
                         ### Cross compiling
-                        #### and the `javac -release` flag
+                        #### e o `javac -release` flag
                         ````
                         javac - release N
                         ````
                         <!-- .element: class="small" -->
 
-                        ...is equivalent to
+                        ...é equivalente a 
 
                         ````
                         javac -source N -target N –bootclasspath rtN.jar ...
@@ -240,22 +240,22 @@
             <section>
                 <div class="small">
                     <div data-markdown>
-                        ## Language details
+                        ## Detalhes da linguagem
                     </div>
 
                     <div class="twocol">
                         <div data-markdown>
                             <script type="text/template">
-                                ##### Process Control [`ControlProcess.java`](https://github.com/bentolor/java9-in-action/blob/master/playground/src/main/java/de/exxcellent/java9/process/ControlProcess.java) <!-- .element: class="c-ref" -->
-                                - Retrieve & inspect processes
-                                - Kill processes
+                                ##### Processos de controle [`ControlProcess.java`](https://github.com/bentolor/java9-in-action/blob/master/playground/src/main/java/de/exxcellent/java9/process/ControlProcess.java) <!-- .element: class="c-ref" -->
+                                - Recuperação e inspeção de processos
+                                - Finalização de processos
 
-                                ##### Collections [`ImmutableCollections.java`](https://github.com/bentolor/java9-in-action/blob/master/playground/src/main/java/de/exxcellent/java9/collections/ImmutableCollections.java) <!-- .element: class="c-ref" -->
+                                ##### Coleções[`ImmutableCollections.java`](https://github.com/bentolor/java9-in-action/blob/master/playground/src/main/java/de/exxcellent/java9/collections/ImmutableCollections.java) <!-- .element: class="c-ref" -->
                                 ```
                                 List/Map/Set.of(1, 2, 3);
                                 ```
 
-                                ##### Enhanced Deprecated
+                                ##### Enhanced Deprecado
                                 ````java
                                 @Deprecated(since ="1.5", forRemoval = true)
                                 ````
@@ -272,7 +272,7 @@
 
                             ##### StackWalker [`StackWalkerExample.java`](https://github.com/cesarnog/java9-in-action/blob/master/playground/src/main/java/de/exxcellent/java9/util/StackWalkerExample.java) <!-- .element: class="c-ref" -->
 
-                            ##### Package name
+                            ##### Nome de pacote
                             ````
                             this.getClass().getPackageName()
                             ````
@@ -284,24 +284,24 @@
 
             <section>
                 <div data-markdown>
-                    ### Process Control
+                    ### Controle de Processo
                     ````java
-                    <pre>// Get PIDs of own or started processes
+                    <pre>// Obtendo o próprio PIDs ou de processos já iniciados
                     out.println("Your pid is " + ProcessHandle.current().getPid());
 
                     Process p = Runtime.getRuntime().exec("sleep 1h");
-                    ProcessHandle h = ProcessHandle.of(p.getPid())  // Optional
+                    ProcessHandle h = ProcessHandle.of(p.getPid())  // Opcional
                             .orElseThrow(IllegalStateException::new);
 
-                    // Do things on exiting process          // CompletableFuture
+                    // Fazendo algo ao sair de um processo        // CompletableFuture
                     h.onExit().thenRun( ()-&gt; out.println("Sleeper exited") );
 
-                    // Get info on process
+                    // Pegando informação do processo
                     out.printf("[%d] %s - %s\n", h.getPid(),
                                h.info().user().orElse("unknown"),
                                h.info().commandLine().orElse("none"));
 
-                    // Kill a process
+                    // Finalizando o processo
                     h.destroy();</pre>
                     ````
                 </div>
@@ -310,9 +310,9 @@
 
             <section>
                 <div data-markdown>
-                    ### Immutable Collection Factories
+                    ### Fábricas de coleções imutáveis
                     ````java
-                    <pre>/* Comment sections would break ... */
+                    <pre>/* Seções de comentários iriam quebrar ... */
                     List&lt;Integer&gt; listOfNumbers = List.of(1, 2, 3, 4, 5/*, null*/);
 
                     Set&lt;Integer&gt; setOfNumbers = Set.of(1, 2, 3, 4, 5/*, 1*/);
@@ -335,7 +335,7 @@
                 <div data-markdown style="font-size: .92em;">
                     ### StackWalker
                     ````java
-                    <pre>// return class/method only for our classes.
+                    <pre>// retorno de classe/método somente para nossas classes.
                     private static List&lt;String&gt; walkAndFilterStackframe() {
                       return StackWalker.getInstance().walk(s -&gt;
                         s.map( frame-&gt; frame.getClassName()+"/"+frame.getMethodName())
@@ -350,13 +350,13 @@
 
             <section>
                 <div data-markdown>
-                    ### New Input Stream Utilities
+                    ### Novas Utilidades para o Input Stream
                     ````java
-                    <pre>// All bytes from an InputStream at once
+                    <pre>// Todos os bytes de um InputStream de uma só vez
                     byte[] result = new ByteArrayInputStream(buf)
                         .readAllBytes();
 
-                    // Directly redirect an InputStream to an OutputStream
+                    // Diretamente redirecionado de um InputStream para um OutputStream
                     new ByteArrayInputStream(buf)
                         .transferTo(System.out);</pre>
                     ````
@@ -372,8 +372,8 @@
                 ### HTTP/2 Client
                 ````java
                 /**
-                 * The HTTP API functions asynchronously &amp; synchronously. In
-                 * asynchronous mode, work is done in threads (ExecutorService).
+                 * A API HTTP funciona de forma assíncrona e síncrona. No
+                 * modo assíncrono, o trabalho é executado em threads (ExecutorService).
                  */
                 public static void main(String[] args) throws Exception {
                   HttpClient.getDefault()
@@ -383,7 +383,7 @@
                     .thenAccept(httpResponse ->
                         out.println(httpResponse.body(HttpResponse.asString()))
                     );
-                  Thread.sleep(999); // Give worker thread some time.
+                  Thread.sleep(999); // Dê algum tempo para a thread trabalhar.
                 }
                 ````
             </div>
@@ -409,12 +409,12 @@
                     <script type="text/template">
                         ## Jigsaw [JEP 201](http://openjdk.java.net/jeps/201)<!-- .element: class="jep" -->
 
-                        > Modules bundle together one or more packages
-                        > and offer stronger encapsulation than jars
+                        > Módulos agrupam um ou mais pacotes
+                        > e oferecem um encapsulamento melhor do que jars
 
-                        - Allow **scaled down runtime JAR**  &rarr; IoT
-                        - **Stronger:** In a module: `public` is no longer public to others
-                        - _Sad:_ No module versioning
+                        - Permite **diminuir o tempo de execução de um JAR**  &rarr; IoT
+                        - **Ponto forte:** Em um módulo: `public` não permanece público para outros
+                        - _Sad:_ Não possui módulo de versão
 
                     </script>
                 </div>
@@ -424,18 +424,18 @@
             <section>
                 <div data-markdown>
                     <script type="text/template">
-                        ### How it works (1)
-                        `module-info.java` files declare dependencies
+                        ### Como funciona (1)
+                       Aqrquivos `module-info.java` declaram dependências
 
                         ```java
                         module com.mysql.jdbc {
-                            // Module dependency
+                            // Dependência de móduolo
                             requires java.sql;
 
-                            // exported package in module
+                            // pacote exportado de um módulo
                             exports com.mysql.jdbc;
 
-                            // Implements service with instance
+                            // Implementação de um serviço com instância
                             provides java.sql.Driver with com.mysql.jdbc.Driver;
                         }
                         ```
@@ -447,16 +447,16 @@
             <section>
                 <div data-markdown class="container">
                     <script type="text/template">
-                        ### How it works (2)
-                        ##### Changes to `javac` and `java` to use modules instead of JARs
+                        ### Como funciona (2)
+                        ##### Alterações do `javac` e `java` para usar módulos ao invés de JARs
                         ````
                         javac -mp modulepath ...
                         java  -mp modulepath -m modulename/moduleclass
                         ````
 
                         ##### Linker
-                        `jlink` can be used to link a set of modules, along with their transitive dependences,
-                        to create a custom modular run-time image
+                        `jlink` pode ser utlizado para unir um conjunto de módulos, juntamente com suas dependências transitivas,
+                        para criar uma imagem modular de tempo-execução 
 
                     </script>
                 </div>
@@ -466,7 +466,7 @@
             <section>
                 <div data-markdown >
                     <script type="text/template">
-                        ### `ServiceLoader` using modules (1)
+                        ### `ServiceLoader` utilizando módulos (1)
                         ````
                         public abstract class BillingService {
 
@@ -492,13 +492,13 @@
             <section>
                 <div data-markdown style="font-size: .9em">
                     <script type="text/template">
-                        ### `ServiceLoader` using modules (2)
+                        ### `ServiceLoader` usando módulos (2)
                         ````java
                         module anothermodule {
                           exports de.exxcellent.anothermodule;
                           requires de.exxcellent.java9;
 
-                          // Provide Service instance (SPI with Jigsaw modules)
+                          // Prover uma instância de serviços(SPI com módulos Jigsaw)
                           provides de.exxcellent.java9.jigsaw.spi.BillingServiceProvider
                           with de.exxcellent.anothermodule.spi.MastercardBillingServiceProvider;
                         }
@@ -511,7 +511,7 @@
             <section>
                 <div data-markdown>
                     <script type="text/template">
-                        ### How it works (3)
+                        ### Como funciona (3)
                         ````
                         $ mkdir -p target/module/de.exxcellent.java9
                         $ mkdir -p target/module/anothermodule
@@ -535,14 +535,14 @@
             <section>
                 <div class="container">
                     <div data-markdown>
-                        ### Tools
-                        - List built-in modules: `java –listmods`
-                        - Find dependencies: `jdeps –jdkinternals app.jar`
+                        ### Ferramentas
+                        - Lista módulos incorporados: `java –listmods`
+                        - Buscando dependências: `jdeps –jdkinternals app.jar`
                     </div>
                     <div data-markdown style="margin-top: 60px">
-                        ### Resources
-                        - [JVM Module Summary](http://cr.openjdk.java.net/~mr/jigsaw/ea/module-summary.html)
-                        - [The State of the Module System](http://openjdk.java.net/projects/jigsaw/spec/sotms/)
+                        ### Recursos
+                        - [Breve resumo da JVM ](http://cr.openjdk.java.net/~mr/jigsaw/ea/module-summary.html)
+                        - [O estado do módulo de sistema](http://openjdk.java.net/projects/jigsaw/spec/sotms/)
                     </div>
                 </div>
             </section>
@@ -555,27 +555,27 @@
             <section>
                 <div class="small">
                     <div data-markdown>
-                        ## Many (obscure) Details
+                        ## Muitos Detalhes (obscuros) 
                     </div>
 
                     <div class="twocol" data-markdown>
                         <script type="text/template">
                             ##### Performance
-                            - Improve Contended Locking [JEP 102](http://openjdk.java.net/jeps/143)<!-- .element: class="jep" -->
-                            - Segmented Code Cache [JEP 197](http://openjdk.java.net/jeps/197)<!-- .element: class="jep" -->
-                            - Smart Java Compilation [JEP 199](http://openjdk.java.net/jeps/199)<!-- .element: class="jep" -->
+                            - Melhora nos travamentos [JEP 102](http://openjdk.java.net/jeps/143)<!-- .element: class="jep" -->
+                            - Cache de código segmentado [JEP 197](http://openjdk.java.net/jeps/197)<!-- .element: class="jep" -->
+                            - Compilação Inteligente do Java [JEP 199](http://openjdk.java.net/jeps/199)<!-- .element: class="jep" -->
 
-                            ##### Unified JVM Logging
-                            - Same logging for _whole_ JVM (GC, ...)
+                            #####  Logging unificado da JVM
+                            - Mesmo logging para _toda_ JVM (GC, ...)
                             [JEP 158](http://openjdk.java.net/jeps/158) <!-- .element: class="jep" -->
 
-                            ##### Obscure stuff
-                            - JVM Compiler Control [JEP 165](http://openjdk.java.net/jeps/165)<!-- .element: class="jep" -->
-                            - UDP Security (DTLS) [JEP 219](http://openjdk.java.net/jeps/219)<!-- .element: class="jep" -->
-                            - Variable Handles [JEP 193](http://openjdk.java.net/jeps/193)<!-- .element: class="jep" -->
-                            - Remove deprecated GC combinations
+                            ##### Coisas obscuras
+                            - Controle do Compilador JVM [JEP 165](http://openjdk.java.net/jeps/165)<!-- .element: class="jep" -->
+                            - Securança UDP (DTLS) [JEP 219](http://openjdk.java.net/jeps/219)<!-- .element: class="jep" -->
+                            - Handles Variáveis [JEP 193](http://openjdk.java.net/jeps/193)<!-- .element: class="jep" -->
+                            - Remoção de combinações deprecadas do GC
                             [JEP 214](http://openjdk.java.net/jeps/214) <!-- .element: class="jep" -->
-                            - Process Import Statements Correctly
+                            - Processamento de instruções de importação de forma correta
                             [JEP 216](http://openjdk.java.net/jeps/216) <!-- .element: class="jep" -->
 
                         </script>
@@ -584,20 +584,20 @@
                     <div class="twocol" data-markdown>
                         <script type="text/template">
                             ##### HTTP 2 Client
-                            -  implements HTTP/2 and WebSocket
+                            -  Implementações HTTP/2 e WebSocket
                             [JEP 110](http://openjdk.java.net/jeps/110) <!-- .element: class="jep" -->
                             [`HttpClientExample.java`](https://github.com/cesarnog/java9-in-action/blob/master/playground/src/main/java/de/exxcellent/java9/http/HttpClientExample.java) <!-- .element: class="c-ref" -->
 
                             ##### Fixes / Enhancements
-                            - UTF-8 Property Files
+                            - Propriedade de Arquivos UTF-8 
                             [JEP 226](http://openjdk.java.net/jeps/226) <!-- .element: class="jep" -->
-                            - HiDPI Graphics on Windows and Linux
+                            - Gráficos HiDPI no Windows e Linux
                             [JEP 263](http://openjdk.java.net/jeps/263) <!-- .element: class="jep" -->
                             - Milling Project Coin <span>(5 enhancements)</span> <!-- .element: class="decent small" -->
                             [JEP 213](http://openjdk.java.net/jeps/213) <!-- .element: class="jep" -->
-                            - Elide Deprecation Warnings on Imports Statements
+                            - Elide Deprecação de Warnings nas Declarações de Importações
                             [JEP 211](http://openjdk.java.net/jeps/211) <!-- .element: class="jep" -->
-                            - Resolve Lint and Doclint Warnings
+                            - Resolve Lint e Doclint Warnings
                             [JEP 212](http://openjdk.java.net/jeps/212) <!-- .element: class="jep" -->
                         </script>
                     </div>
@@ -609,8 +609,8 @@
             <section>
                 <div data-markdown>
                     <script type="text/template">
-                        #### Many many many more
-                        Full list see at  http://openjdk.java.net/projects/jdk9/
+                        #### E muito mais
+                       Acesse a lista completa em http://openjdk.java.net/projects/jdk9/
                     </script>
                 </div>
             </section>
